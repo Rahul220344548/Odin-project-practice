@@ -6,6 +6,19 @@ function sumRange(n) {
     }
 }
 
+function power(n, e) {
+    if (e == 0) {
+        return 1
+    } else {
+        return n * power(n, e - 1)
+    }
 
-n = 3
-console.log(sumRange(n))
+
+}
+
+
+
+
+n = 4
+e = 6
+console.log(power(n, e))
