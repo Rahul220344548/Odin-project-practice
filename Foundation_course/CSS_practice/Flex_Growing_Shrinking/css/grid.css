@@ -1,0 +1,21 @@
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    width: 400px;
+    background-color: antiquewhite;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.grids {
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    margin: 5px;
+    
+    text-align: center;
+}

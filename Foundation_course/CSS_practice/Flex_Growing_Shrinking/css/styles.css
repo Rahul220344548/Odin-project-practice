@@ -1,0 +1,15 @@
+.flex-container {
+    display: flex; /* This makes the container a flex container */
+    flex-direction: column;
+    height: 200px; /* Full viewport height */
+    width: 400px;
+    background-color: lightgrey; /* Background color for visibility */
+}
+
+.flex-item {
+    background-color: lightblue; /* Background color for visibility */
+    padding: 20px; /* Some padding for better appearance */
+    margin: 10px; /* Some margin between items */
+    border: 1px solid blue; /* Border for visibility */
+    text-align: center; /* Center text inside the items */
+}
