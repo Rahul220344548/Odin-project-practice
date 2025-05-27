@@ -1,3 +1,17 @@
+var nestedObject = {
+    data: {
+        info: {
+            stuff: {
+                thing: {
+                    moreStuff: {
+                        magicNumber: 44,
+                        something: 'foo2'
+                    }
+                }
+            }
+        }
+    }
+}
 
 function sumRange(n) {
     if (n == 1) return 1;
@@ -40,10 +54,28 @@ function productOfArray(arr) {
 
 }
 
+function contains(obj, searchValue) {
+
+    if (typeof obj !== "object" || obj === null) {
+        return obj === searchValue;
+    } else {
+        for (const value of Object.values(obj)) {
+            if (contains(value, searchValue)) {
+                return true;
+            }
+        }
+    }
+    return false;
+
+}
+
 n = 5
 e = 6
 arr1 = [1, 2, 3]
 arr2 = [1, 2, 3, 10]
 arr = [1, 10, 41, 27, 13, 38]
-console.log(productOfArray(arr2))
+
+
+console.log(contains(nestedObject, 210))
+
 
