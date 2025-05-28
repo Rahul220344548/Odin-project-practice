@@ -71,17 +71,30 @@ function contains(obj, searchValue) {
 
 n = 5
 e = 6
-arr1 = [1, 2, 3]
-arr2 = [1, 2, 3, 10]
+
 arr = [1, 10, 41, 27, 13, 38]
+flattenArr = [1, [2, [3, 4]], 5]
 
 
 function countElementsInArray(arr) {
     if (arr.length == 0) return 0;
     arr.shift();
     return 1 + countElementsInArray(arr)
+}
 
+function flattenArray(array) {
+
+    let result = []
+
+    for (const element of array) {
+        if (Array.isArray(element)) {
+            result = result.concat(flattenArray(element))
+        } else {
+            result.push(element)
+        }
+    }
+    return result;
 }
 
 
-console.log(countElementsInArray(arr))
+console.log(flattenArray(flattenArr))
