@@ -76,6 +76,12 @@ arr2 = [1, 2, 3, 10]
 arr = [1, 10, 41, 27, 13, 38]
 
 
-console.log(contains(nestedObject, 210))
+function countElementsInArray(arr) {
+    if (arr.length == 0) return 0;
+    arr.shift();
+    return 1 + countElementsInArray(arr)
+
+}
 
 
+console.log(countElementsInArray(arr))
