@@ -1,5 +1,7 @@
 
-let fruits = 'apple';
-let bag = {};
-bag[fruits + 'Compters'] = 5;
-console.log(bag)
+let user = {};
+user.name = "John";
+user.surename = "Smith";
+user.name = "Pete";
+delete user.name
+console.log(user)
