@@ -1,16 +1,18 @@
 
-let salaries = {
-    John: 100,
-    Ann: 160,
-    Pete: 130
-}
+let menu = {
+    width: 200,
+    height: 300,
+    title: "My menu"
+};
 
-function checkSalary(obj) {
-    let sum = 0
-    for (key in salaries) {
-        sum += salaries[key]
+function multiplyNumeric(obj) {
+
+    for (let key in obj) {
+        if (typeof obj[key] == 'number') {
+            obj[key] *= 2;
+        }
     }
-    return sum
+    console.log(obj)
 }
 
-console.log(checkSalary(salaries))
+multiplyNumeric(menu);
