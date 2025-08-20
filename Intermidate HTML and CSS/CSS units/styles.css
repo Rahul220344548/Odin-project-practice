@@ -1,0 +1,38 @@
+/* 1. Set a base font-size here (root) */
+.html {
+    font-size: 16px;
+}
+
+/* 2. Style the card container */
+.card {
+    background-color: tomato;
+}
+
+
+/* 3. Style the card heading */
+
+.card h2 {
+    color: yellow;
+    font-size: 1.5rem;
+}
+
+/* 4. Style the paragraph */
+
+.card p {
+    font-size: 1rem;
+}
+
+/* 5. Style the button 
+   - Use em for padding and border radius
+*/
+.card button {
+    padding: 0.5em 1em;
+    border-radius: 0.25em;
+}
+
+/* 6. Large card variation 
+   - Increase font-size
+*/
+.large-card {
+    font-size: 1.25rem;
+}

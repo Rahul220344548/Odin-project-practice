@@ -71,9 +71,10 @@ function contains(obj, searchValue) {
 
 n = 5
 e = 6
-
+arr1 = [1, 2, 3, 4]
 arr = [1, 10, 41, 27, 13, 38]
 flattenArr = [1, [2, [3, 4]], 5]
+let seven = totalIntegers([[[5], 3], 0, 2, ['foo'], [], [4, [5, 6]]]);
 
 
 function countElementsInArray(arr) {
@@ -96,5 +97,19 @@ function flattenArray(array) {
     return result;
 }
 
+function parseAMultiDimensionalArr(arr) {
 
-console.log(flattenArray(flattenArr))
+}
+
+function filterEven(arr) {
+    let result = []
+    if (arr.length === 0) return 0;
+
+    let first = arr[0]
+    if (first % 2 == 0) {
+        result = p
+    }
+
+
+}
+console.log(filterEven(arr1))
