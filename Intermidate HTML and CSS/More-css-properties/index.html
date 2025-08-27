@@ -21,7 +21,23 @@
 
         }
 
-        /* .img {
+
+        .card {
+            width: 250px;
+            height: 150px;
+            padding: 1rem;
+            border: 2px solid #333;
+            border-radius: 10px;
+            background: #f0f0f0;
+            margin: 20px;
+        }
+
+        .overflow-auto {
+            overflow: auto;
+        }
+
+
+        .img {
             width: 600px;
             height: 600px;
             border: thick double silver;
@@ -32,7 +48,12 @@
             background-size: cover;
             background-position: center;
             background-attachment: local scroll;
-        } */
+        }
+
+
+        .img:hover {
+            opacity: 0.4;
+        }
     </style>
 </head>
 
@@ -42,7 +63,19 @@
 
     <div class="img"></div>
 
-
+    <div class="card overflow-auto">
+        <strong>overflow: scroll</strong>
+        <p>
+            This is a very long text that will keep going and going. You can scroll inside the card to see the rest of
+            it.
+            This is a very long text that will keep going and going. You can scroll inside the card to see the rest of
+            it.
+            This is a very long text that will keep going and going. You can scroll inside the card to see the rest of
+            it.
+            This is a very long text that will keep going and going. You can scroll inside the card to see the rest of
+            it.
+        </p>
+    </div>
 
 
 
