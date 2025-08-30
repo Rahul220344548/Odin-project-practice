@@ -7,34 +7,36 @@
     <title>Advanced Selectors</title>
 
     <style>
+        .first {
+            font-size: 120%;
+            font-weight: bold;
+        }
 
+        article p:hover {
+            color: blue;
+        }
+
+        article p:nth-child(2) {
+            background-color: orange;
+        }
     </style>
 </head>
 
 <body>
 
     <article>
-        <div>
-            I am a div
-            <div>
-                I am div inside a div
-            </div>
-        </div>
-        <p>I am another paragraph.</p>
-        <div>
-            I am a div
+        <p class="first">
+            Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion
+            daikon amaranth tatsoi tomatillo melon azuki bean garlic.
+        </p>
 
-            <div>
-                I am div inside a div
-            </div>
-        </div>
+        <p>
+            Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette
+            tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.
+            Dandelion cucumber earthnut pea peanut soko zucchini.
+        </p>
     </article>
-    <div>
-        this will work!
-    </div>
-    <div>
-        wthis work?
-    </div>
+
 
 
 
