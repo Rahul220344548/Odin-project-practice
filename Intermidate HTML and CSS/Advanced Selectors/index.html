@@ -7,32 +7,40 @@
     <title>Advanced Selectors</title>
 
     <style>
-        ol li::marker {
-            color: red;
-            font-weight: bolder;
+        body {
+            font: 1.2em / 1.5 sans-serif;
         }
 
-        ul li::marker {
-            color: lightgreen;
-            font-size: 150%;
+        .container h1 {
+            color: blue;
+        }
 
+        p>span {
+            font-size: 200%;
+        }
+
+        .container h2 {
+            background-color: blue;
         }
     </style>
 </head>
 
 <body>
 
-    <ol>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Corporis aliquam excepturi neque deleniti.</li>
-        <li>Incidunt eos repellendus vitae deserunt!</li>
-    </ol>
-
-    <ul>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Laborum molestias consequuntur soluta ab.</li>
-        <li>Et veniam suscipit quod qui.</li>
-    </ul>
+    <div class="container">
+        <h1>This is a heading</h1>
+        <p>
+            Veggies es <span>bonus vobis</span>, proinde vos postulo essum magis
+            kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean
+            garlic.
+        </p>
+        <h2>A level 2 heading</h2>
+        <p>
+            Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette
+            tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.
+            Dandelion cucumber earthnut pea peanut soko zucchini.
+        </p>
+    </div>
 
 
 </body>
