@@ -6,19 +6,35 @@
     <title>Document</title>
     <style>
 
-        .card{
-            width: min(90%,600px);
-            padding: max(5vw,20px);
-            border: 2px solid black;
-        }
+      :root {
+        --sidebar: 20%;
+      }
+      
+      .layout {
+        display: flex;
+        margin: 0 auto;
+      }
+
+      .sidebar{
+        width: var(--sidebar);
+        border: 2px solid black;
+        
+      }
+      .content{
+        width: calc(100% - var(--sidebar));
+        border: 2px solid black;
+      }
 
 
     </style>
 </head>
 <body>
-    <div class="card">
-        Profile Card
-    </div>    
+
+    <div class="layout">
+        <aside class="sidebar">Sidebar</aside>
+        <main class="content">Main Content</main>
+    </div>
+    
     
 
 </body>
