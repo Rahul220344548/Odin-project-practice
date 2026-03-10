@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .parent{
+            border: 2px dotted black;
+            padding: 1em;
+            width: 50%;
+        }
+
+        .box{
+            border: 2px solid black;
+            width: clamp(100px, 50%, 200px);
+            font-size: clamp(1.5rem, 5vw, 3em);
+            padding: 6px;
+            text-align: center;
+            margin: 0 auto;
+            
+        }
+        
+
+    </style>
+</head>
+<body>
+    
+    <div class="parent">
+        <div class="box">Rahul</div>
+    </div>    
+    
+
+</body>
+</html>
