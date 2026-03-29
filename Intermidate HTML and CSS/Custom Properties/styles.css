@@ -1,0 +1,37 @@
+ @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Playwrite+MX+Guides&family=WDXL+Lubrifont+TC&display=swap');
+:root {
+    --div-background-color: tomato;
+    --text-color: black;
+    --div-padding: 10px;
+    --div-margin: 10px;
+    --div-font-size: calc(1rem + 1vh);
+    --div-font-family: "Iosevka Charon", monospace;
+    --div-border-radius: 0.5em;
+    --hover-color: #b4b4b4;
+}
+
+.child {
+    background-color: var(--div-background-color);
+    color: var(--text-color);
+    margin: var(--div-margin);
+    padding: var(--div-padding);
+    font-family: var(--div-font-family);
+    font-size: var(--div-font-size);
+    border-radius: var(--div-border-radius);
+}
+
+.child:hover{
+    background-color: var(--hover-color);
+}
+
+.one { 
+    --div-background-color: #6a5acd;
+    --text-color: white;
+    --div-font-size: 1.5rem;
+    --div-border-radius: 1em;
+}
+
+.two {
+    --div-background-color: #3cb371;
+    --text-color: white;
+}
