@@ -10,6 +10,10 @@
     --hover-color: #b4b4b4;
 }
 
+body {
+    background-color: var(--background-color, #FCF9ED);
+}
+
 .child {
     background-color: var(--div-background-color);
     color: var(--text-color);
@@ -34,4 +38,10 @@
 .two {
     --div-background-color: #3cb371;
     --text-color: white;
+}
+
+.btn {
+    background-color: var(--div-background-color);
+    padding: var(--div-padding);
+    border-radius: var(--div-border-radius);
 }
