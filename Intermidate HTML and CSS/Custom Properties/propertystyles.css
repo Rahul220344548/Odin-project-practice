@@ -1,0 +1,12 @@
+@property --main-color {
+    syntax: "<color>";
+    initial-value: blue;
+    inherits: true;
+}
+
+.box-1 {
+    --main-color: red;
+}
+.child{
+    background-color: var(--main-color);
+}
