@@ -4,8 +4,17 @@
     inherits: true;
 }
 
+@property --box-size {
+    syntax: "<length>";
+    initial-value: 100px;
+    inherits: true;
+}
+
 .box-1 {
     --main-color: red;
+    width: var(--box-size);
+    height: var(--box-size);
+    border: 2px dashed;
 }
 .child{
     background-color: var(--main-color);
