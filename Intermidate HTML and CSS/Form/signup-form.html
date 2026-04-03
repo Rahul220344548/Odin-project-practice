@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up form</title>
+    
+    <style>
+        .body {
+            text-align: center;
+        }
+        form {
+            display: inline-block;
+            padding: 1em;
+            border: 1px solid black;
+            border-radius: 1em;
+        }
+        p + p {
+            margin-top: 1em;
+        }
+        input{
+            font: 1em sans-serif;
+            width: 300px;
+            box-sizing: border-box;
+            border: 1px solid #999999;
+        }
+        .button{
+            padding-left: 90px;
+        }
+        button{
+            margin-left: 0.5em;
+        }
+    </style>
+</head>
+<body>
+    
+    <form>
+       
+        <p>
+
+            <label for="user_email">Email</label>
+            <input type="email" id="user_email" name="email" placeholder="you@example.com" />
+            
+        </p>
+
+        <p>
+            <label for="user_password">Password</label>
+            <input type="password" id="user-password" name="password" placeholder="**********" />
+        </p>
+        
+        <p>
+            <button type="submit">Login</button>
+        </p>
+    </form>
+
+</body>
+</html>
