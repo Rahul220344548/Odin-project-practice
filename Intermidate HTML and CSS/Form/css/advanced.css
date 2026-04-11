@@ -1,0 +1,33 @@
+select {
+    border: 2px solid   #dddddd;
+    border-radius: 0.5em;
+    background: #eeeeee;
+    width: 200px;
+    height: 130px;
+}
+
+option {
+    background: #eeeeee;
+    padding: 10px;
+    height: 40px;
+    outline: none;
+}
+
+option:nth-of-type(odd){
+    background: white;
+}
+
+option::checkmark {
+    order: 1;
+    margin-left: auto;
+    content: "☑️";
+}
+
+option:checked {
+  font-weight: bold;
+}
+
+option:hover,
+option:focus {
+  background: plum;
+}
