@@ -1,33 +1,24 @@
-select {
-    border: 2px solid   #dddddd;
-    border-radius: 0.5em;
-    background: #eeeeee;
-    width: 200px;
-    height: 130px;
+
+input + span {
+  position: relative;
 }
 
-option {
-    background: #eeeeee;
-    padding: 10px;
-    height: 40px;
-    outline: none;
+input + span::before {
+  position: absolute;
+  right: -20px;
+  top: 5px;
 }
 
-option:nth-of-type(odd){
-    background: white;
+input:invalid {
+  border: 2px solid red;
 }
 
-option::checkmark {
-    order: 1;
-    margin-left: auto;
-    content: "☑️";
+input:invalid + span::before {
+  content: "✖";
+  color: red;
 }
 
-option:checked {
-  font-weight: bold;
-}
-
-option:hover,
-option:focus {
-  background: plum;
+input:valid + span::before {
+  content: "✓";
+  color: green;
 }
