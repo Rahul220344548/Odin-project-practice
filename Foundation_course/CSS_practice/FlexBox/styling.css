@@ -2,13 +2,13 @@
   display: flex;
 }
 
+.sidebar {
+  background: lightcoral;
+  width: 200px;
 
-.box {
-  background: lightblue;
-  border: 1px solid black;
-  flex: 1 1 0;
 }
 
-.box:nth-child(2){
-    flex: 2;
+.content {
+  background: lightyellow;
+  flex: 1;
 }
