@@ -1,26 +1,14 @@
-/* *{
-    margin: 0;
-    padding: 0;
-} */
-
-.flexbox-container{
-    display: flex;
-    border: 2px dashed;
-    width: 50vw;
-}
-
-.flexbox-container div {
-    background: tomato;
-    border: 2px solid black;
-    height: 100px;
-    /* width: 50px; */
-    flex: 
-
-}
-
-.flexbox-container .flexbox-item2 {
-    /* flex-shrink: 0; */
-    
+.container {
+  display: flex;
 }
 
 
+.box {
+  background: lightblue;
+  border: 1px solid black;
+  flex: 1 1 0;
+}
+
+.box:nth-child(2){
+    flex: 2;
+}
